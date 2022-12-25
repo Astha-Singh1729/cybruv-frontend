@@ -12,7 +12,7 @@ type SeriesItemProps = { title: string, list: Contest[] }
 const Series = ({ title, list }: SeriesItemProps) => {
     const styleSummary = {
         color: 'white',
-        backgroundColor: 'black'
+        backgroundColor: 'black',
     };
     const styleDetail = {
         color: 'white',
@@ -26,7 +26,7 @@ const Series = ({ title, list }: SeriesItemProps) => {
         BigBoi.push(<div>
             <AccordionDetails style={styleDetail}>
                 <Typography>
-                    <a href={stuff.practice} target="_blank" rel="noopener noreferrer">{title} {stuff.title}</a>
+                    <a href={stuff.practice} target="_blank" rel="noopener noreferrer" >{title} {stuff.title}</a>
                 </Typography>
             </AccordionDetails>
             <AccordionDetails>
