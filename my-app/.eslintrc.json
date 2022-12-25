@@ -1,6 +1,5 @@
 {
   "extends": [
-    "plugin:@next/next/recommended",
-    "@salesforce/eslint-config-lwc/recommended"
+    "next"
   ]
 }
