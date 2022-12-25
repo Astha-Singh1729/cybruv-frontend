@@ -4,7 +4,7 @@ type NavItemProps = { text: string, href: string }
 const NavItem = ({ text, href }: NavItemProps) => {
     return (
         <div>
-            <Link href={href} className="link" style={{ fontSize: '2.5vh' }}>
+            <Link href={href} className="link" style={{ fontSize: '3vh' }}>
                 {text}
             </Link>
         </div>
@@ -18,7 +18,7 @@ const Navbar = () => {
             <header style={{ display: 'flex', height: '11vh', width: '70vw', margin: 'auto', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex' }}>
                     <div style={{ display: 'flex', alignItems: 'center', marginLeft: '4vw' }}>
-                        <Link href="/" className="cybros" style={{ fontSize: '3vh' }}>
+                        <Link href="/" className="cybros" style={{ fontSize: '4vh' }}>
                             CYBROS
                         </Link>
                     </div>
