@@ -22,11 +22,11 @@ const Series = ({ title, list }: SeriesItemProps) => {
 
     const BigBoi: JSX.Element[] = [];
     list.map((stuff) => {
-        const edi = stuff.edi == '-1' ? "Not Available" : <a href={stuff.edi} target="_blank" rel="noreferrer" style={{ color: 'black' }}>Editorial</a>;
+        const edi = stuff.edi == '-1' ? "Not Available" : <a href={stuff.edi} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Editorial</a>;
         BigBoi.push(<div>
             <AccordionDetails style={styleDetail}>
                 <Typography>
-                    <a href={stuff.practice} target="_blank" rel="noreferrer">{title} {stuff.title}</a>
+                    <a href={stuff.practice} target="_blank" rel="noopener noreferrer">{title} {stuff.title}</a>
                 </Typography>
             </AccordionDetails>
             <AccordionDetails>

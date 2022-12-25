@@ -17,7 +17,7 @@ const Component = ({ event, detail, link }: NavItemProps) => {
                         <div style={{ paddingTop: "4vh", fontSize: "2.5vh" }}>
                             <div className="register"  >
                                 <div style={{ margin: 'auto' }}>
-                                    <a className="alink" href={link} target="_blank" rel="noreferrer">Register</a>
+                                    <a className="alink" href={link} target="_blank" rel="noopener noreferrer">Register</a>
                                 </div>
                             </div>
                         </div>

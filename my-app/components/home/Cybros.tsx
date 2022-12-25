@@ -1,8 +1,4 @@
-const Cybros = () => {
-    return (
-        <>
-            <img src="/cybros.jpg" alt="" />
-        </>
-    );
-}
-export default Cybros;
+const nhp = () => {
+    return <>yo</>
+};
+export default nhp;
