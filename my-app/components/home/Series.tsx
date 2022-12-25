@@ -16,7 +16,8 @@ const Series = ({ title, list }: SeriesItemProps) => {
     };
     const styleDetail = {
         color: 'white',
-        backgroundColor: '#FB2576'
+        backgroundColor: '#FB2576',
+        height: '2vh'
     };
 
 
@@ -26,11 +27,11 @@ const Series = ({ title, list }: SeriesItemProps) => {
         BigBoi.push(<div>
             <AccordionDetails style={styleDetail}>
                 <Typography>
-                    <a href={stuff.practice} target="_blank" rel="noopener noreferrer" >{title} {stuff.title}</a>
+                    <a href={stuff.practice} target="_blank" rel="noopener noreferrer">{title} {stuff.title}</a>
                 </Typography>
             </AccordionDetails>
             <AccordionDetails>
-                <Typography>
+                <Typography style={{ height: '1.7vh' }}>
                     {edi}
                 </Typography>
             </AccordionDetails>
@@ -38,14 +39,14 @@ const Series = ({ title, list }: SeriesItemProps) => {
     });
     return (
         <div className='events-dabba' style={{ width: '48vw', margin: 'auto' }}>
-            <Accordion>
+            <Accordion style={{ marginBottom: '3vh' }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     style={styleSummary}
                 >
-                    <Typography>{title}</Typography>
+                    <Typography style={{ fontSize: '2.2vh' }}>{title}</Typography>
                 </AccordionSummary>
                 {BigBoi}
             </Accordion>
@@ -56,23 +57,23 @@ const Series = ({ title, list }: SeriesItemProps) => {
 export default function Beginners() {
     return (
         <div style={{ alignContent: 'center', marginTop: '15vh' }}>
-            <div className='Beginners' style={{ width: '48vw', margin: 'auto', textAlign: 'center', fontSize: '1.6vw', fontWeight: 'bold' }}>
+            <div className='Beginners' style={{ width: '48vw', margin: 'auto', textAlign: 'center', fontSize: '1.6vw', fontWeight: 'bold', marginBottom: '6vh' }}>
                 Practice and Upsolve
             </div>
             <Series title='Beginners Series' list={beginners_data} />
             {/* <Series title='CodeLNM' list={codelnm_data} /> */}
             <div className='events-dabba' style={{ width: '48vw', margin: 'auto' }}>
-                <Accordion>
+                <Accordion style={{ marginBottom: '3vh' }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                         style={{ color: 'white', backgroundColor: 'black' }}
                     >
-                        <Typography>CodeLNM</Typography>
+                        <Typography style={{ fontSize: '2.2vh' }}>CodeLNM</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
+                        <Typography style={{ height: '1.7vh' }}>
                             To be Added
                         </Typography>
                     </AccordionDetails>

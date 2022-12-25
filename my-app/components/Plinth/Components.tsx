@@ -2,7 +2,7 @@ type NavItemProps = { event: string, detail: string, link: string }
 const Component = ({ event, detail, link }: NavItemProps) => {
     return (
         <>
-            <div style={{ display: 'flex', alignContent: "center", marginTop: "15vh" }}>
+            <div style={{ display: 'flex', alignContent: "center", marginTop: "15vh", marginBottom: '7vh' }}>
 
                 <div className="events-dabba" style={{ width: '48vw', margin: "auto", textAlign: "center", border: "0.1vw solid grey", borderRadius: '1vw' }}>
                     <div style={{ textAlign: 'left', fontSize: 'small' }}>&nbsp; 🔴 &nbsp;  🟡  &nbsp; 🟢</div>
