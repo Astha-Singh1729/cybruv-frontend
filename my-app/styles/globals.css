@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
+
+body {
+   color: white;
+   background-color: black;
+}
+.link{
+    color: grey;
+}
+
+.link:hover{
+    color: white;
+}
+.cybros{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: left;
+    font-size: large;
+}
+
+.register{
+    height: 5vh;
+    width: 7vw; 
+    margin: auto; 
+    background-color: grey;
+    display: flex; 
+    align-items: center; 
+    border-radius: 0.5vw
+}
+
+.register:hover {
+    background-color: green;
+    /* background-color: #FB2576; */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.events-dabba:hover {
+    box-shadow: 0 0 2vw #9ecaed;
+}
+
+
+
+
+
