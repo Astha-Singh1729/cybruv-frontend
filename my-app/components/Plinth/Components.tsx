@@ -1,7 +1,4 @@
 type NavItemProps = { event: string, detail: string, link: string }
-const Link = () => {
-
-};
 const Component = ({ event, detail, link }: NavItemProps) => {
     return (
         <>

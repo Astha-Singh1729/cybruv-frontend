@@ -5,7 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { beginners_data, placement_data, codelnm_data } from './series_data';
+import { beginners_data, placement_data } from './series_data';
 type Contest = { title: string, practice: string, edi: string };
 type SeriesItemProps = { title: string, list: Contest[] }
 

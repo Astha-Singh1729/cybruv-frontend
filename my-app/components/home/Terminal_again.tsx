@@ -13,15 +13,11 @@ export const MyComponent = () => {
             cmd: true,
         },
         {
-            text: 'Enjoy coding and practice contests with us!',
+            text: 'Enjoy coding and practice problems with us!',
             cmd: true,
         },
         {
-            text: 'PLINTH is the annual inter-collegiate Techno-Management fest of LNMIIT.',
-            cmd: true,
-        },
-        {
-            text: 'Check out plinth page to know about our events lined up for plinth.',
+            text: 'Check out plinth page to know about our events lined up for annual tech fest of LNMIIT (Plinth).',
             cmd: true,
         },
         {
