@@ -17,29 +17,29 @@ const Series = ({ title, list }: SeriesItemProps) => {
     const styleDetail = {
         color: 'white',
         backgroundColor: '#FB2576',
-        height: '2vh'
+        height: '2vh',
+        display: 'flex',
+        justifyContent: 'space-between'
     };
 
 
     const BigBoi: JSX.Element[] = [];
     list.map((stuff) => {
-        const edi = stuff.edi == '-1' ? "Not Available" : <a href={stuff.edi} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Editorial</a>;
+        const edi = stuff.edi == '-1' ? "Unavailable" : <a href={stuff.edi} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Editorial</a>;
         BigBoi.push(<div>
-            <AccordionDetails style={styleDetail}>
+            <AccordionDetails style={styleDetail} >
                 <Typography>
                     <a href={stuff.practice} target="_blank" rel="noopener noreferrer">{title} {stuff.title}</a>
                 </Typography>
-            </AccordionDetails>
-            <AccordionDetails>
-                <Typography style={{ height: '1.7vh' }}>
+                <Typography style={{ height: '1.7vh', justifyContent: 'space-between', color: 'black' }}>
                     {edi}
                 </Typography>
             </AccordionDetails>
         </div>);
     });
     return (
-        <div className='events-dabba' style={{ width: '48vw', margin: 'auto' }}>
-            <Accordion style={{ marginBottom: '3vh' }}>
+        <div className='events-dabba' style={{ width: '70vw', margin: 'auto' }}>
+            <Accordion style={{ marginBottom: '3vh' }} >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
                     aria-controls="panel1a-content"
@@ -56,13 +56,13 @@ const Series = ({ title, list }: SeriesItemProps) => {
 
 export default function Beginners() {
     return (
-        <div style={{ alignContent: 'center', marginTop: '15vh' }}>
-            <div className='Beginners' style={{ width: '48vw', margin: 'auto', textAlign: 'center', fontSize: '1.6vw', fontWeight: 'bold', marginBottom: '6vh' }}>
+        <div style={{ alignContent: 'center', marginTop: '12vh' }}>
+            <div className='Beginners' style={{ width: '70vw', margin: 'auto', textAlign: 'center', fontSize: '3vh', fontWeight: 'bold', marginBottom: '8vh' }}>
                 Practice and Upsolve
             </div>
             <Series title='Beginners Series' list={beginners_data} />
             {/* <Series title='CodeLNM' list={codelnm_data} /> */}
-            <div className='events-dabba' style={{ width: '48vw', margin: 'auto' }}>
+            <div className='events-dabba' style={{ width: '70vw', margin: 'auto' }}>
                 <Accordion style={{ marginBottom: '3vh' }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}

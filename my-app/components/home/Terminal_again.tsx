@@ -26,5 +26,11 @@ export const MyComponent = () => {
             cmd: false,
         },
     ];
-    return <Terminal lines={myCMD} interval={80} />;
+    return (
+
+        <Terminal lines={myCMD} interval={80} replay={false} />
+
+
+    );
+
 };

@@ -19,8 +19,7 @@ const events = [
   },
   {
     title: 'ENIGMA',
-    content:
-      'This is Cybros’ flagship rated contest. It is a normal one-person competitive programming contest. It has been hosted on esteemed competitive programming websites like Codechef and Codeforces in the previous editions of Plinth. ',
+    content: `This is Cybros’ flagship rated contest. It is a normal one-person competitive programming contest. This is an onsite round in addition to the official rated round in Codeforces.`,
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSeETAUcVCXd0iytIqI4xQkN-c3Rbkw0ayDXrTSYZed2YCVmkQ/viewform?usp=sf_link',
   },
 ];

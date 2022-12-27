@@ -6,8 +6,8 @@ const Plinth = () => {
             <div style={{ margin: 'auto' }}>
                 <Image
                     src="/plinth.jpg" alt={'image'}
-                    width={400}
-                    height={100}
+                    width={300}
+                    height={80}
                 ></Image>
             </div>
 
