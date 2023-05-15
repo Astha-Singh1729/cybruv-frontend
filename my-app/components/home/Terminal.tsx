@@ -1,4 +1,3 @@
-
 import { MyComponent } from "./Terminal_again";
 const Termina = () => {
     return (

@@ -1,11 +1,10 @@
-
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { beginners_data, placement_data } from './series_data';
+import { beginners_data, placement_data, codelnm_data } from './series_data';
 type Contest = { title: string, practice: string, edi: string };
 type SeriesItemProps = { title: string, list: Contest[] }
 
@@ -61,24 +60,7 @@ export default function Beginners() {
                 Practice and Upsolve
             </div>
             <Series title='Beginners Series' list={beginners_data} />
-            {/* <Series title='CodeLNM' list={codelnm_data} /> */}
-            <div className='events-dabba' style={{ width: '70vw', margin: 'auto' }}>
-                <Accordion style={{ marginBottom: '3vh' }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                        style={{ color: 'white', backgroundColor: 'black' }}
-                    >
-                        <Typography style={{ fontSize: '2.2vh' }}>CodeLNM</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography style={{ height: '1.7vh' }}>
-                            To be Added
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-            </div>
+            <Series title='CodeLNM' list={codelnm_data} />
             <Series title='Placement Series' list={placement_data} />
         </div>
     );

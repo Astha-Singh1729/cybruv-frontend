@@ -26,7 +26,7 @@ const Navbar = () => {
                 <div style={{ display: 'flex', alignItems: 'center', float: 'right' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                         <NavItem href='/' text="Home" />
-                        <NavItem href='/plinth' text="Plinth" />
+                        {/* <NavItem href='/plinth' text="Plinth" /> */}
                         {/* <NavItem href='/announcements' text="Announcements" /> */}
                     </div>
                 </div>
